@@ -40,7 +40,7 @@ o	Modify contact details
 
 o	Search contact
 
-##SWOT Analysis
+## SWOT Analysis
 
 <img src=
-"
+"https://github.com/pydimanigupta256316/L-T-miniproject/tree/main/requirements"/>
