@@ -43,4 +43,4 @@ o	Search contact
 ## SWOT Analysis
 
 <img src=
-"https://github.com/pydimanigupta256316/L-T-miniproject/tree/main/requirements"/>
+"https://github.com/pydimanigupta256316/L-T-miniproject/tree/main/requirements/swot.png/"/>
