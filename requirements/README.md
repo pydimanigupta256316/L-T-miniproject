@@ -40,3 +40,7 @@ o	Modify contact details
 
 o	Search contact
 
+##SWOT Analysis
+
+<img src=
+"
