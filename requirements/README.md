@@ -29,6 +29,7 @@ The main aim of this project is to develop an “phonebook contact “applicatio
 
 ## Explanation
 Phonebook application have few inbuilt features like
+
 o	Add contact details
 
 o	Delete contact details
