@@ -44,3 +44,22 @@ o	Search contact
 
 <img src=
 "https://github.com/pydimanigupta256316/L-T-miniproject/blob/main/requirements/swot.PNG/"/>
+
+## 4W's and 1H
+
+### Who:
+*Each person will maintain their own contact list
+### What:
+* Contacts will be managed and can store additional information with the help of the system
+### When:
+* we will add new contact when he is not exit in our contact list
+### Where:
+* We can use anywhere 
+### How:
+* Data will be manually entered once the process is initiated.
+
+## Detailed Requirements :
+
+### High Level Requirements:
+
+### Low Level Requirements:
