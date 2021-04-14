@@ -48,7 +48,7 @@ o	Search contact
 ## 4W's and 1H
 
 ### Who:
-*Each person will maintain their own contact list
+* Each person will maintain their own contact list
 ### What:
 * Contacts will be managed and can store additional information with the help of the system
 ### When:
