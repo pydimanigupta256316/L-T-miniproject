@@ -40,5 +40,5 @@ while(t<=3);
     
 	}
  
-syatem("cls");
+system("cls");
 }
