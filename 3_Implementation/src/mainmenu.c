@@ -5,7 +5,7 @@
 #include<stdlib.h>
 #include "phonebook.h"
 int mainmenu(int read)//function decleration
-{
+{system("cls");
 	struct contact t;
 	t.age=50;
 	

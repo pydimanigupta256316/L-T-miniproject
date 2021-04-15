@@ -5,7 +5,7 @@
 #include<stdlib.h>
 #include "phonebook.h"
 int add_contact(int read)
-{  
+{  system("cls");
 	//list of variables
 	char ans,g[15];
 	

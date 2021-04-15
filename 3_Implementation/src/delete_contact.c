@@ -6,7 +6,7 @@
 #include "phonebook.h"
 
 int delete_contact(int read, char temp[])
-{
+{system("cls");
 char name[20],g[15];
 int found=0;
    FILE *k, *ft;
