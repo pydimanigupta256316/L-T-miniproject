@@ -13,7 +13,7 @@ char org_Password[15]="mani";
 do
 {
 	printf("\n\n\n\n\t\t\t\tEnter Password :)");
-	scanf("%s",&Password);
+	scanf("%s",Password);
 	
 	if (strcmp(Password,org_Password)==0)
 	{

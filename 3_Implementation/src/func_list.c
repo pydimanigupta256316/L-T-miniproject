@@ -19,7 +19,7 @@ int func_list(int useless)
 			printf("%s\n",p.name);
 			printf("%s\n",p.company);
 			printf("%s\n",p.jobtitle);
-		    printf("%c\n ",p.gender);
+		    printf("%s\n ",p.gender);
 			
 			printf("%i\n ",p.age);
 		
