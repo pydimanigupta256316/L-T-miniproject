@@ -3,9 +3,9 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD_DIR = Build
 
-SRC = src/add_contact.c src/delete_contact.c src/modify_contact.c  src/func_list.c  src/login.c src/back_fun.c src/mainmenu.c src/search_contact.c main.c 
+SRC = src/add_contact.c src/delete_contact.c src/modify_contact.c src/back_fun.c src/func_list.c  src/login.c src/mainmenu.c main.c src/search_contact.c 
 
-TEST_SRC =  src/add_contact.c src/delete_contact.c src/modify_contact.c  src/func_list.c  src/login.c  src/back_fun.c src/mainmenu.c src/search_contact.c  test/test.c unity/unity.c
+TEST_SRC = src/add_contact.c src/delete_contact.c src/modify_contact.c src/back_fun.c src/func_list.c  src/login.c src/mainmenu.c src/search_contact.c test/test.c unity/unity.c
 
 INC = -I inc -I unity
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
@@ -37,9 +37,11 @@ run: all
 
 
 coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
-	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
-	gcov -a $(TEST_SRC)
+	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC)  $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(SRC)
+
+
 
 
 staticcheck:
@@ -53,7 +55,7 @@ $(BUILD_DIR):
 	mkdir $(BUILD_DIR)
 test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o test.$(EXEC)
-	 ./test.$(EXEC)  
+	./test.$(EXEC)
 valgrind:
 	valgrind ./test.$(EXEC)
 clean:
