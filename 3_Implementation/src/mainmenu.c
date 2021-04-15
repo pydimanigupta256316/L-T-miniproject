@@ -8,7 +8,7 @@ int mainmenu(int read)//function decleration
 {
 	struct contact t;
 	t.age=50;
-	system("cls");
+	
 	int choose;
 	printf("\t\t\t\t\t\twelcome to phonebook\t\t\t\t\n");
 	printf("\n\n\n\n\n\t\t\t\t1. Add contact\n");

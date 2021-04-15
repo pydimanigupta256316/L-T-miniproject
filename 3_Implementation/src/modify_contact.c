@@ -12,7 +12,7 @@ int modify_contact(int read, char temp[])
   char ch;
   char name[20],g[15];
 
-  system("cls");
+  
  		ft=fopen("temp2.dat","w+");
 	   k=fopen("project.dat","r");
 	   if(k==NULL)
