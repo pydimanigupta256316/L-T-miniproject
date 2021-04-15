@@ -3,5 +3,5 @@
 ## ## component  diagram
 ![component]
 
-##Architecture diagram
-![architecture diagram]
+##state
+![state]
