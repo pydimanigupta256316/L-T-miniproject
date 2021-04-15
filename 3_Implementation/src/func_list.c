@@ -13,7 +13,7 @@ int func_list(int useless)
       int row;
 	  char g[15];
 		row=17;
-		while(fscanf(k,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,&p.gender,&p.age, p.address, p.contact_no, p.email,p.nickname)!=EOF)
+		while(fscanf(k,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,&p.age, p.address, p.contact_no, p.email,p.nickname)!=EOF)
 		{
 		
 			printf("%s\n",p.name);

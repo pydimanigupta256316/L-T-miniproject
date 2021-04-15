@@ -23,13 +23,13 @@ int found=0;
 	strcpy(name,temp);
 	}
 	
-	while (fscanf(k,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,&p.gender,&p.age, p.address, p.contact_no, p.email,p.nickname)!=EOF)
+	while (fscanf(k,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,&p.age, p.address, p.contact_no, p.email,p.nickname)!=EOF)
 	{
 		if (strcmp(p.name,name)!=0)
-		fprintf(ft,"%s %s %s %c %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,p.age, p.address, p.contact_no, p.email,p.nickname);
+		fprintf(ft,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,p.age, p.address, p.contact_no, p.email,p.nickname);
 		else 
 		{
-			printf("%s %s %s %c %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,p.age, p.address, p.contact_no, p.email,p.nickname);
+			printf("%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,p.age, p.address, p.contact_no, p.email,p.nickname);
 			found=1;
 		}
 	}//while loop ends

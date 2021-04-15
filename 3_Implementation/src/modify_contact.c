@@ -41,7 +41,7 @@ int modify_contact(int read, char temp[])
 			
 			return 0;
 		}
-		while(fscanf(k,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,&p.gender,&p.age, p.address, p.contact_no, p.email,p.nickname)!=EOF)
+		while(fscanf(k,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,&p.age, p.address, p.contact_no, p.email,p.nickname)!=EOF)
 		{
 			if(strcmp(p.name, name)==0)
 			{
@@ -60,7 +60,7 @@ int modify_contact(int read, char temp[])
 				scanf("%s",p.jobtitle);
 			
 				printf("Enter Gender: ");
-				scanf(" %c",&p.gender);
+				scanf(" %s",p.gender);
 				
 				printf("Enter age: ");
 				scanf(" %i",&p.age);
@@ -90,7 +90,7 @@ int modify_contact(int read, char temp[])
 			}
 			else
 			{
-			fprintf(ft,"%s %s %s %c %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,p.age, p.address, p.contact_no, p.email,p.nickname);	
+			fprintf(ft,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,p.age, p.address, p.contact_no, p.email,p.nickname);	
 			}
 		 }
 		 if(!valid) printf("\n\t\tNO contact FOUND...");

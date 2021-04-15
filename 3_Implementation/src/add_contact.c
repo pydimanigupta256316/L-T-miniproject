@@ -23,7 +23,7 @@ int add_contact(int read)
 	printf("enter age\n");
 	scanf("%d",&p.age);
 	printf("enter gender");
-	scanf("%s",&p.gender);
+	scanf("%s",p.gender);
 	printf("enter contact number");
 	scanf("%s",p.contact_no);
     printf("enter address");
@@ -34,7 +34,7 @@ int add_contact(int read)
     scanf("%s",p.nickname);
 	
 	}
-    fprintf(k,"%s %s %s %i %c %s %s %s %s \n", p.name, p.company, p.jobtitle, p.age,p.gender, p.address, p.contact_no, p.email,p.nickname);
+    fprintf(k,"%s %s %s %i %s %s %s %s %s \n", p.name, p.company, p.jobtitle, p.age,p.gender, p.address, p.contact_no, p.email,p.nickname);
     printf("\n\n\t\t\t.... contact saved  ...");
     fclose(k);//k file is closed
 	if (read==0)

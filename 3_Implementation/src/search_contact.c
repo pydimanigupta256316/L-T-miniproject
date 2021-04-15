@@ -39,7 +39,7 @@ int search_contact(int read, char temp[])
 				printf("%s",p.jobtitle);
 			
 				printf("gender: ");
-				printf(" %c",p.gender);
+				printf(" %s",p.gender);
 				
 				printf(" age: ");
 				printf(" %i",p.age);
