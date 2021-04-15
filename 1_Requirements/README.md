@@ -59,7 +59,21 @@ o	Search contact
 * Data will be manually entered once the process is initiated.
 
 ## Detailed Requirements :
+## High Level Requirements: 
+| ID | Description | Category | Status | 
+| ----- | ----- | ------- | ---------|
+| HR01 | managing phonebook| Techincal | TBD-S1 | 
 
-### High Level Requirements:
 
-### Low Level Requirements:
+##  Low level Requirements:
+ 
+| ID | Description | HLR ID | Status (Implemented/Future) |
+| ------ | --------- | ------ | ----- |
+| LR01 |Providing a login system which will give access to only authorised personal| HR01 | TBD-S1 |
+| LR01.1 | Adding a new contact to the record | HR01 | TBD-S1 |
+| LR01.2 | Display all contacts that are present in the file | HR01 | TBD-S1 |
+| LR01.3| Update the record of contact if mistake is made, using name | HR01 | TBD-S1 |
+| LR01.4 |Search a contact | HR01 | TBD-S1 |
+| LR01.5 |Delete contact from the file | HR01 | TBD-S1 |
+
+
