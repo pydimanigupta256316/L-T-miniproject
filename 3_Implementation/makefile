@@ -39,7 +39,7 @@ run: all
 coverage:${PROJECT_NAME}
 	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(SRC)
+	gcov -a test.c
 
 
 staticcheck:
