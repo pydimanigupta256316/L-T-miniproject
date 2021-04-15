@@ -3,7 +3,7 @@ TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 BUILD_DIR = Build
 
-SRC = src/add_contact.c src/delete_contact.c src/modify_contact.c  src/func_list.c  src/login.c src/back_fun.c src/mainmenu.c src/search_contact.c 
+SRC = src/add_contact.c src/delete_contact.c src/modify_contact.c  src/func_list.c  src/login.c src/back_fun.c src/mainmenu.c src/search_contact.c  main.c
 
 TEST_SRC =  src/add_contact.c src/delete_contact.c src/modify_contact.c  src/func_list.c  src/login.c  src/back_fun.c src/mainmenu.c src/search_contact.c  test/test.c unity/unity.c
 
@@ -30,7 +30,7 @@ endif
 .PHONY : all test coverage run clean doc
 
 all:$(BUILD_DIR)
-	gcc $(INC)  $(SRC) main.c -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	gcc $(INC)  $(SRC)  -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 
 run: all
 	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
@@ -39,7 +39,7 @@ run: all
 coverage:${PROJECT_NAME}
 	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a add_contact.c delete_contact.c modify_contact.c  func_list.c  login.c back_fun.c mainmenu.c search_contact.c
+	gcov -a $(SRC)
 
 
 staticcheck:
