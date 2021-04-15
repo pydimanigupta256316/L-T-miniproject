@@ -37,8 +37,8 @@ run: all
 
 
 coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o ttse.$(EXEC)
-	./ttse.$(EXEC)
+	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
 	gcov -a $(TEST_SRC)
 
 
