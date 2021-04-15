@@ -1,7 +1,7 @@
 PROJ_NAME = contact
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-BUILD_DIR = Build
+BUILD_DIR = build
 
 SRC = src/add_contact.c src/delete_contact.c src/modify_contact.c src/back_fun.c src/func_list.c  src/login.c src/mainmenu.c main.c src/search_contact.c 
 
