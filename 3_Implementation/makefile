@@ -8,7 +8,7 @@ SRC = src/add_contact.c src/delete_contact.c src/modify_contact.c  src/func_list
 TEST_SRC =  src/add_contact.c src/delete_contact.c src/modify_contact.c  src/func_list.c  src/login.c  src/back_fun.c src/mainmenu.c src/search_contact.c  test/test.c unity/unity.c
 
 INC = -I inc -I unity
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+#TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 #INCLUDE_LIBS = 
 INCLUDE_LIBS = -lcunit
