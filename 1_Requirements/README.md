@@ -20,6 +20,11 @@ The main aim of this project is to develop an “phonebook contact “applicatio
 
 
 ## cost and features
+| Time | Software |Feature| Cost | 
+| ----- | ----- | ------- | ---------|
+| 1897 |-| firstly it is not a software based .it contains only 50 contacts | 0.5$| 
+| 1985|c | it has only availability of few contacts due to less memory | 2$|
+ 
 
 ## Defining our system
 
