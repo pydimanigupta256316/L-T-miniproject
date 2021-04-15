@@ -8,8 +8,8 @@ void login(void)//function for login screen
 {
 //list of variables	
 int t=0	;
-char Password[15];
-char org_Password[15]="mani";
+char Password[20];
+char org_Password[20]="mani";
 do
 {
 	printf("\n\n\n\n\t\t\t\tEnter Password :)");

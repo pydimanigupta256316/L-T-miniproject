@@ -5,9 +5,9 @@
 #include<stdlib.h>
 #include "phonebook.h"
 int add_contact(int read)
-{  system("cls");
+{  
 	//list of variables
-	char ans,g[15];
+	char ans,g[20];
 	
 	FILE*k;//file pointer
 	k=fopen("project.dat","a");//open file in write mode

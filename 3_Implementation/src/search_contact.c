@@ -11,7 +11,7 @@ int search_contact(int read, char temp[])
 	char name[20];
 	
 	FILE *k;
-	char g[15];
+	char g[20];
 	k=fopen("project.dat","r");
 	printf("\n Search contact\n");
 	

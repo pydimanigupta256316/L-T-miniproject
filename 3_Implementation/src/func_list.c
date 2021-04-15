@@ -11,7 +11,7 @@ int func_list(int useless)
 	k=fopen("project.dat","r");
 	printf("\n List contact details\n");
       int row;
-	  char g[15];
+	  char g[20];
 		row=17;
 		while(fscanf(k,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,&p.age, p.address, p.contact_no, p.email,p.nickname)!=EOF)
 		{

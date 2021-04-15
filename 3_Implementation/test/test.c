@@ -54,7 +54,7 @@ void reset_struct()
   strcpy(p.name,"mani");
   strcpy(p.address,"andhrapradesh");
   strcpy(p.contact_no,"8247519556");
-  strcpy(p.email,"pydimanigupta123@gmail.com");
+  strcpy(p.email,"pydimani@gmail.com");
   strcpy(p.gender,"M");
   strcpy(p.company,"L&t");
   strcpy(p.jobtitle,"manager");
@@ -86,14 +86,14 @@ void test_add_contact(void) {
   TEST_ASSERT_EQUAL(p.age, add_contact(1));
   strcpy(p.name,"M");
   TEST_ASSERT_EQUAL(1, add_contact(1));
-  strcpy(p.name,"MMMMMMMMMMMMMMMMMMMMMMMMMMM");
+  strcpy(p.name,"MMMMMMMMMMMMMMMMMM");
   TEST_ASSERT_EQUAL(1, add_contact(1));
   strcpy(p.name,"M2M");
   TEST_ASSERT_EQUAL(1, add_contact(1));
   reset_struct();
   strcpy(p.company,"M");
   TEST_ASSERT_EQUAL(1, add_contact(1));
-  strcpy(p.company,"MMMMMMMMMMMMMMMMMMMMMMMMMMM");
+  strcpy(p.company,"MMMMMMMMMMMMMMMMM");
   TEST_ASSERT_EQUAL(1, add_contact(1));
   strcpy(p.company,"M2M");
   TEST_ASSERT_EQUAL(1, add_contact(1));
@@ -103,7 +103,7 @@ void test_add_contact(void) {
   reset_struct();
   strcpy(p.address,"Mu");
   TEST_ASSERT_EQUAL(1, add_contact(1));
-  strcpy(p.address,"Mummmmmmmmmmmmmmmmmmm");
+  strcpy(p.address,"Mummmmmmmmmmmmmmmm");
   TEST_ASSERT_EQUAL(1, add_contact(1));
   reset_struct();
   strcpy(p.contact_no,"90040873");

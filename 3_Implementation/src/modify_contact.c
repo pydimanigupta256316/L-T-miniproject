@@ -10,7 +10,7 @@ int modify_contact(int read, char temp[])
 	FILE *k, *ft;
   int i,b, valid=0;
   char ch;
-  char name[20],g[15];
+  char name[20],g[20];
 
   
  		ft=fopen("temp2.dat","w+");
@@ -79,14 +79,10 @@ int modify_contact(int read, char temp[])
 				scanf("%s",p.nickname);
 			
 			
-			    printf("\nPress U charecter for the Updating operation : ");
-				scanf("%c",&ch);
-				
-				if(ch=='u' || ch=='U')
-				{
+			    
 				fprintf(ft,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,p.age, p.address, p.contact_no, p.email,p.nickname);
 				printf("\ncontact updated successfully...");
-				}					
+									
 			}
 			else
 			{

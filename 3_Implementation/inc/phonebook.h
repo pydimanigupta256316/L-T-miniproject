@@ -29,14 +29,14 @@ int back_fun(int temp);
 struct contact//list of global variable
 {
 	int age;
-	char gender[5];
+	char gender[20];
 	char name[20];
 	char company[20];
 	char jobtitle[20];
-	char contact_no[15];
-	char address[30];
-	char email[30];
-	char nickname[15];
+	char contact_no[20];
+	char address[20];
+	char email[20];
+	char nickname[20];
 };
 
 struct contact  p,temp_c;

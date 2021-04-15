@@ -7,7 +7,7 @@
 
 int delete_contact(int read, char temp[])
 {
-char name[20],g[15];
+char name[20],g[20];
 int found=0;
    FILE *k, *ft;
 	ft=fopen("temp_file2.dat","w+");
