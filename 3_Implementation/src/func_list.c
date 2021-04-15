@@ -6,7 +6,7 @@
 #include "phonebook.h"
 int func_list(int useless)
 {
-	system("cls");
+	
 	FILE *k;
 	k=fopen("project.dat","r");
 	printf("\n List contact details\n");

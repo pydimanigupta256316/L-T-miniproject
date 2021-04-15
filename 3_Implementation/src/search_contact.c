@@ -7,7 +7,7 @@
 #include "phonebook.h"
 
 int search_contact(int read, char temp[])
-{   system("cls");
+{   
 	char name[20];
 	
 	FILE *k;

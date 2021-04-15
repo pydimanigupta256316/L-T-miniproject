@@ -6,7 +6,7 @@
 #include"phonebook.h"
 int back_fun(int useless)//function to exit
 {
-	system("cls");
+	
 	printf("\nThank you");
 	return 1;
 	
