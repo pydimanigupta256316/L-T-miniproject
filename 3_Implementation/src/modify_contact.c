@@ -84,7 +84,7 @@ int modify_contact(int read, char temp[])
 				
 				if(ch=='u' || ch=='U')
 				{
-				fprintf(ft,"%s %s %s %c %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,p.age, p.address, p.contact_no, p.email,p.nickname);
+				fprintf(ft,"%s %s %s %s %i %s %s %s %s", p.name, p.company, p.jobtitle,p.gender,p.age, p.address, p.contact_no, p.email,p.nickname);
 				printf("\ncontact updated successfully...");
 				}					
 			}
