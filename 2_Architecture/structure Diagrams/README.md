@@ -1,3 +1,7 @@
 # Structure Diagrams
 
-## Add all the Structure Diagrams implemented
+## ## component  diagram
+![component]
+
+##Architecture diagram
+![architecture diagram]
