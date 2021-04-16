@@ -65,6 +65,7 @@ void test_search_contact()
 {
   TEST_ASSERT_EQUAL(0,search_contact(1,"mani"));
   TEST_ASSERT_EQUAL(0,search_contact(1,"satya"));
+  
 }
 void test_back_fun()
 {
