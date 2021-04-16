@@ -1,14 +1,21 @@
-//HEADER FILES
-#include<stdio.h>//Use for standard I/O Operation
-
-#include<ctype.h>//se for toupper(), tolower(),etc
-#include<string.h>//Use for strcmp(),strcpy(),strlen(),etc
+/**
+ * @file main.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-13
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+#include<stdio.h>
+#include<string.h>
 #include<stdlib.h>
-#include"phonebook.h"
-char ans=0; 
-int ok;
-int b, valid=0;
+#include "header.h"
+
 int main()
 {
-login();//Use to call Menu function	
+    system("color 8f");
+    start();
+    return 0;
 }
