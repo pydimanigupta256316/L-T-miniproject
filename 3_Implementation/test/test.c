@@ -4,7 +4,7 @@
 
 /* Modify these two lines according to the project */
 
-#define PROJECT_NAME    "contact"
+#define PROJECT_NAME "contact"
 int b=0;
 int valid=1;
 int ok=1;
@@ -86,14 +86,14 @@ void test_add_contact(void) {
   TEST_ASSERT_EQUAL(p.age, add_contact(1));
   strcpy(p.name,"M");
   TEST_ASSERT_EQUAL(1, add_contact(1));
-  strcpy(p.name,"MMMMMMMMMMMMMMMMMM");
+  strcpy(p.name,"MMMMMMMMMMMMMMMMM");
   TEST_ASSERT_EQUAL(1, add_contact(1));
   strcpy(p.name,"M2M");
   TEST_ASSERT_EQUAL(1, add_contact(1));
   reset_struct();
   strcpy(p.company,"M");
   TEST_ASSERT_EQUAL(1, add_contact(1));
-  strcpy(p.company,"MMMMMMMMMMMMMMMMM");
+  strcpy(p.company,"MMMMMMMMMMMMMMM");
   TEST_ASSERT_EQUAL(1, add_contact(1));
   strcpy(p.company,"M2M");
   TEST_ASSERT_EQUAL(1, add_contact(1));
@@ -103,7 +103,7 @@ void test_add_contact(void) {
   reset_struct();
   strcpy(p.address,"Mu");
   TEST_ASSERT_EQUAL(1, add_contact(1));
-  strcpy(p.address,"Mummmmmmmmmmmmmmmm");
+  strcpy(p.address,"Mummmmmmmmmmmmmm");
   TEST_ASSERT_EQUAL(1, add_contact(1));
   reset_struct();
   strcpy(p.contact_no,"90040873");

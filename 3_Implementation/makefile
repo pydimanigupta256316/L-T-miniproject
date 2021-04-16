@@ -42,7 +42,9 @@ coverage:${PROJECT_NAME}
 	gcov -a add_contact.c delete_contact.c modify_contact.c back_fun.c func_list.c login.c mainmenu.c search_contact.c
 
 
-
+doc:
+	make doc -C doc
+	
 
 staticcheck:
 	cppcheck --enable=all .
@@ -63,3 +65,4 @@ clean:
 	$(RM) *.gcov 
 	$(RM) *.gcda
 	$(RM) *.gcno
+	make clean -C doc

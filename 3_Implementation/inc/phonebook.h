@@ -1,6 +1,6 @@
 /**
  * @file phonebook.h
- * @author your name (you@domain.com)
+ * @author mani gupta
  * @brief 
  * @version 0.1
  * @date 2021-04-14
@@ -16,14 +16,14 @@ extern int b, valid;
 extern char ans; 
 
 //functiondeclaration
-void login(void);
-int mainmenu(int read);
-int add_contact(int read);
-int func_list(int temp);
-int search_contact(int read,char temp[]);
-int modify_contact(int read,char temp[]);
-int delete_contact(int read,char temp[]);
-int back_fun(int temp);
+void login(void); //to verify the password
+int mainmenu(int read);//it will display list of features 
+int add_contact(int read);//to add contact
+int func_list(int temp);//to view the list
+int search_contact(int read,char temp[]);//to search contact
+int modify_contact(int read,char temp[]);//to edit contact details
+int delete_contact(int read,char temp[]);//to delete contact 
+int back_fun(int temp);//out of phonebook
 
 
 struct contact//list of global variable
